@@ -1,0 +1,120 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - ahoj
+    - čau
+    - dobrej
+    - dobrý
+    - dobrý den
+    - zdravím
+
+- intent: goodbye
+  examples: |
+    - nashledanou
+    - nashle
+    - naschle
+    - ahoj
+    - měj se
+    - mějte se
+    - zatím
+    - tak zatím
+
+- intent: affirm
+  examples: |
+    - ano
+    - jo
+    - tak jo
+    - dobře
+    - no dobře
+    - dobrá
+    - souhlasím
+    - souhlas
+    - paráda
+    - fine
+    - fajn
+    - super
+    - ok
+
+- intent: deny
+  examples: |
+    - ne
+    - určitě ne
+    - asi ne
+    - nemyslím
+    - to jsi uhodl
+    - tos uhod
+    - raději ne
+
+- intent: mood_great
+  examples: |
+    - dobře
+    - fine
+    - fajn
+    - v poho
+    - pohoda
+    - dobrý
+    - jo dobrý
+    - mám se fajn
+    - dobrá
+
+- intent: mood_unhappy
+  examples: |
+    - mám se strašně
+    - mám se příšerně
+    - nic moc
+    - na nic
+    - na hovno
+    - blbě
+    - strašně
+    - velmi špatně
+    - neštastný
+    - není to dobrý
+    - na prd
+
+- intent: bot_challenge
+  examples: |
+    - jsi robot?
+    - jsi bot?
+    - jseš robot?
+    - ty nejsi člověk
+
+- intent: dekuji
+  examples: |
+    - děkuji
+    - díky
+    - dík
+    - tak dík
+    - děkuju
+    - díky moc
+    - mockrát děkuju
+    - moc děkuju
+    
+- intent: otevri_branku
+  examples: |
+    - otevři branku
+    - prosím otevři branku
+    - otevřít
+    - otevři dveře
+
+- intent: postak
+  examples: |
+    - pošťák
+    - vezu balíček
+    - vezu vám balíček
+    - přivezl jsem poštu
+    - mám pro vás balíček
+    - mám pro vás poštu
+    - mám tu balíček
+    - mám tu balík
+    - přivezl jsem zásilku
+
+- intent: navsteva
+  examples: |
+    - potřeboval bych mluvit s [Honzou](clenove)
+    - potřebuju mluvit s [Májou](clenove)
+    - mohu mluvit s [Katkou](clenove)
+    - můžete mi prosím zavolat [Kubu](clenove)
+    - je doma [Mája](clenove)?
+

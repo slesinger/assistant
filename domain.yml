@@ -1,0 +1,51 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - dekuji
+  - otevri_branku
+  - postak
+  - navsteva
+
+responses:
+  utter_greet:
+  - text: "Dobrý den. Co potřebujete?"
+
+  utter_cheer_up:
+  - text: "Tak to chce čokoládičku."
+    image: "https://us.123rf.com/450wm/lipskiy/lipskiy1402/lipskiy140200204/26180706-schokoriegel-nahaufnahme.jpg?ver=6"
+
+  utter_did_that_help:
+  - text: "Funguje to?"
+
+  utter_happy:
+  - text: "Tak to zasluhuje potlesk."
+
+  utter_goodbye:
+  - text: "Čus"
+  - text: "Nashledanou"
+
+  utter_iamabot:
+  - text: "Jsem pracující inteligence"
+
+  utter_dekuji:
+  - text: "Díky"
+
+  utter_postak:
+  - text: "Teď nemohu otevřít. Můžete to prosím nechat na poště?"
+
+  utter_nenidoma:
+  - text: "Teď není doma. Můžete přijít později? Nebo zavolejte na mobil."
+
+  utter_nenizac:
+  - text: "Není zač"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: no
