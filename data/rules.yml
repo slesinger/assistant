@@ -1,0 +1,29 @@
+version: "2.0"
+stories:
+- story: kolik je hodin
+  steps:
+  - intent: kolik_je_hodin
+  - action: utter_kolik_je_hodin
+- story: pozdrav_opakovany
+  steps:
+  - intent: pozdrav
+  - action: utter_pozdrav
+  - intent: pozdrav
+  - action: utter_pozdrav
+rules:
+- rule: rozluc se kdykoliv
+  steps:
+  - intent: rozlouceni
+  - action: utter_rozlouceni
+- rule: Activate form poptej mistnost
+  steps:
+  - intent: rozsvit
+  - action: poptej_mistnost
+  - active_loop: poptej_mistnost
+- rule: Submit form poptej mistnost
+  condition:
+  - active_loop: poptej_mistnost
+  steps:
+  - action: poptej_mistnost
+  - active_loop: null
+  - action: action_rozsvit

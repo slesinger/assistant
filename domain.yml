@@ -1,0 +1,55 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- kolik_je_hodin
+- pozdrav
+- rozlouceni
+- jak_se_mas
+- rozsvit
+- stop
+entities:
+- mistnost
+slots:
+  mistnost:
+    type: text
+    influence_conversation: false
+  requested_slot:
+    type: text
+    influence_conversation: false
+responses:
+  utter_rozlouceni:
+  - text: Měj se
+  - text: Tak čau
+  - text: Naschledanou
+  - text: Přijď zase
+  utter_pozdrav:
+  - text: Čau
+  - text: Ahoj
+  - text: Sem se lek
+  - text: No nazdar
+  utter_jak_se_mas:
+  - text: Jak se asi tak můžu mít
+  - text: Mám se
+  - text: To nechceš slyšlet
+  - text: Paráda
+  - text: OK
+  - text: Jo, de to
+  utter_kolik_je_hodin:
+  - text: Zeptej se mámy.
+  - text: To fakt nevim.
+  - text: Sorry, nemám hodinky.
+  utter_potvrzeni:
+  - text: ok
+  utter_ask_mistnost:
+  - text: a kde?
+  - text: V jaké místnosti?
+actions:
+- action_rozsvit
+- utter_kolik_je_hodin
+forms:
+  poptej_mistnost:
+    mistnost:
+    - entity: mistnost
+      type: from_entity

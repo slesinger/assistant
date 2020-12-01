@@ -1,0 +1,59 @@
+version: "2.0"
+nlu:
+- intent: pozdrav
+  examples: |
+    - čau
+    - ahoj
+    - dobrý den
+    - zdravím
+    - čus
+- intent: rozlouceni
+  examples: |
+    - měj se
+    - nashledanou
+    - tak čau
+    - já jdu
+    - Tak čau
+    - tak já jdu
+- intent: jak_se_mas
+  examples: |
+    - jak se máš?
+    - jak se ti vede?
+    - jak je?
+    - jak se máš
+    - a jak se máš
+- intent: rozsvit
+  examples: |
+    - rozsvítit
+    - roužnout
+    - roužni
+    - rozsviť
+    - udělat světlo
+    - rozsviť světlo
+    - udělej světlo v [obýváku](mistnost)
+    - rozsvítit v [ložnici](mistnost)
+    - rozsviť světlo v [ložnici](mistnost)
+    - rozsviť v [obýváku](mistnost)
+    - rozsviť v [ložnici](mistnost)
+- intent: kolik_je_hodin
+  examples: |
+    - kolik je
+    - kolik je hodin
+- intent: stop
+  examples: |
+    - stop
+    - přerušit
+    - zruš to
+    - přestaň
+- synonym: obyvak
+  examples: |
+    - obýváku
+    - obývák
+- synonym: loznice
+  examples: |
+    - ložnici
+    - ložnice
+- synonym: kuchyn
+  examples: |
+    - kuchyni
+    - kuchyně
