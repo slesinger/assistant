@@ -1,5 +1,6 @@
 venv
 credentials.yml
+hass.conf
 events*
 rasa.db
 story_graph.dot

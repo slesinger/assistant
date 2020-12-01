@@ -1,0 +1,3 @@
+[api]
+base_url = http://ha.doma:8123
+bearer = go to http://homeassistant:8123/profile to obtain long lived token

@@ -33,8 +33,14 @@ nlu:
     - udělej světlo v [obýváku](mistnost)
     - rozsvítit v [ložnici](mistnost)
     - rozsviť světlo v [ložnici](mistnost)
+    - rozsviť [krb](mistnost)
+    - rozsviť u [krb](mistnost)
     - rozsviť v [obýváku](mistnost)
+    - rozsviť v [kuchyni](mistnost)
+    - rozsviť v [jídelně](mistnost)
     - rozsviť v [ložnici](mistnost)
+    - rozsviť u [Kuby](mistnost)
+    - rozsviť u [Máji](mistnost)
 - intent: kolik_je_hodin
   examples: |
     - kolik je
@@ -57,3 +63,18 @@ nlu:
   examples: |
     - kuchyni
     - kuchyně
+- synonym: krb
+  examples: |
+    - krbu
+    - krb
+    - krbem
+- synonym: kuba
+  examples: |
+    - kuby
+    - kuba
+    - kubou
+- synonym: maja
+  examples: |
+    - máji
+    - mája
+    - májou

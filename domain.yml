@@ -15,7 +15,7 @@ slots:
   mistnost:
     type: text
     influence_conversation: false
-  requested_slot:
+  posledni_mistnost:
     type: text
     influence_conversation: false
 responses:
