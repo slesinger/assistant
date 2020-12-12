@@ -2,6 +2,9 @@
 
 import configparser
 from requests import get, post
+import logging
+logging.basicConfig(format='%(asctime)s %(message)s')
+logger = logging.getLogger(__name__)
 
 class Hass():
 
@@ -18,6 +21,7 @@ class Hass():
     
     def call_service(self, service, **kwargs):
         entity_id = kwargs.get('entity_id', False)
-        print("volam sluzbu {} s entitou {}".format(service, entity_id))
+        logger.info("Hass service {} entity_id={}".format(service, entity_id))
         r = post(self.url + "/api/services/" + service.replace('.', '/', 1), headers=self.headers, json={ "entity_id": entity_id })
-        print(r.status_code)
+        if r.status_code != 200:
+            logger.error("Hass call status code {}".format(r.status_code))

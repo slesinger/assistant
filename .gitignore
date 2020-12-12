@@ -6,3 +6,4 @@ rasa.db
 story_graph.dot
 __pycache__
 models/*
+tts-cache/*

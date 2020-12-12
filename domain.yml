@@ -2,23 +2,70 @@ version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
 intents:
-- kolik_je_hodin
+- zhasnout
+- rozsvit
+- neni_zac
 - pozdrav
+- kolik_je_hodin
 - rozlouceni
 - jak_se_mas
-- rozsvit
 - stop
+
 entities:
 - mistnost
+
 slots:
-  mistnost:
-    type: text
-    influence_conversation: false
   posledni_mistnost:
     type: text
     influence_conversation: false
+  requested_slot:
+    type: text
+    influence_conversation: false
+
+actions:
+- action_rozsvit
+- action_time
+- action_zhasni
+- utter_ask_mistnost
+- utter_neni_zac
+
 responses:
+  utter_out_of_scope:
+  - text: zeptej se mámy
+  - text: tak to nevim
+  - text: to bych taky rád věděl
+  utter_ask_rephrase:
+  - text: cože?
+  - text: prosím?
+  - text: to nechápu
+  - text: né, že bych tomu zatím rozuměl
+  - text: to je ňáký složitý
+  - text: nerozumim
+  - text: sem se nějak ztratil
+  - text: tak to mi budeš muset vysvětlit
+  - text: můžeš to říct nějak pochopitelně?
+  - text: mužeš to nějak zopakovat
+  utter_default:
+  - text: nevim co s tim
+  - text: a co mám jako dělat?
+  - text: sem se zasek
+  - text: já to asi umim, ale nevim co
+  - text: to jsme se neučili
+  - text: sem nemocnej
+  - text: s tím ti nepomůžu
+  - text: to tak si radši udělej sám
+  - text: tohle mi nemůžeš přikazovat
+  - text: porucha
+  - text: ropucha
+  utter_neni_zac:
+  - text: není zač
+  - text: n z
+  - text: rádo se stalo
+  - text: v poho
+  - text: pohoda
+  - text: no jo
   utter_rozlouceni:
   - text: Měj se
   - text: Tak čau
@@ -36,20 +83,18 @@ responses:
   - text: Paráda
   - text: OK
   - text: Jo, de to
-  utter_kolik_je_hodin:
-  - text: Zeptej se mámy.
-  - text: To fakt nevim.
-  - text: Sorry, nemám hodinky.
   utter_potvrzeni:
   - text: ok
+  - text: ó ká
+  - text: oki
+  - text: oukchej
+  - text: jo jo
+  - text: dobře
+  - text: jasně
+  - text: sámo
+  - text: hm
+  - text: jo
+  - text: a je to
   utter_ask_mistnost:
   - text: a kde?
-  - text: V jaké místnosti?
-actions:
-- action_rozsvit
-- utter_kolik_je_hodin
-forms:
-  poptej_mistnost:
-    mistnost:
-    - entity: mistnost
-      type: from_entity
+  - text: v jaké místnosti?

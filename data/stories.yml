@@ -1,19 +1,7 @@
 version: "2.0"
 stories:
+
 - story: pozdrav
   steps:
   - intent: pozdrav
   - action: utter_pozdrav
-- story: rozlouceni
-  steps:
-  - intent: rozlouceni
-  - action: utter_rozlouceni
-- story: jak se mas
-  steps:
-  - intent: jak_se_mas
-  - action: utter_jak_se_mas
-
-- story: kolik je hodin
-  steps:
-  - intent: kolik_je_hodin
-  - action: utter_kolik_je_hodin

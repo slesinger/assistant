@@ -1,5 +1,10 @@
 version: "2.0"
 nlu:
+- intent: out_of_scope
+  examples: |
+    - Je evidentni, že to je blábol
+    - Ministr zdravotnictví to zase nedal?
+    - Kolik uší má kočka?
 - intent: pozdrav
   examples: |
     - čau
@@ -7,6 +12,7 @@ nlu:
     - dobrý den
     - zdravím
     - čus
+    - díky
 - intent: rozlouceni
   examples: |
     - měj se
@@ -30,17 +36,38 @@ nlu:
     - rozsviť
     - udělat světlo
     - rozsviť světlo
-    - udělej světlo v [obýváku](mistnost)
-    - rozsvítit v [ložnici](mistnost)
-    - rozsviť světlo v [ložnici](mistnost)
+    - udělej světlo v [hale](mistnost)
+    - rozsvítit v [jídelně](mistnost)
+    - rozsviť světlo v [koupelně](mistnost)
     - rozsviť [krb](mistnost)
-    - rozsviť u [krb](mistnost)
+    - rozsviť u [krbu](mistnost)
     - rozsviť v [obýváku](mistnost)
     - rozsviť v [kuchyni](mistnost)
     - rozsviť v [jídelně](mistnost)
     - rozsviť v [ložnici](mistnost)
     - rozsviť u [Kuby](mistnost)
     - rozsviť u [Máji](mistnost)
+    - roužni v [pracovně](mistnost)
+    - zapni [lampičku](mistnost)
+    - rozsviť u [vchodu](mistnost)
+- intent: zhasnout
+  examples: |
+    - zhasnout
+    - zhasni
+    - udělat tmu
+    - zhasni světlo
+    - udělej tmu v [obýváku](mistnost)
+    - zhasnout v [ložnici](mistnost)
+    - zhasni světlo v [ložnici](mistnost)
+    - zhasni [krb](mistnost)
+    - zhasni u [krb](mistnost)
+    - zhasni v [obýváku](mistnost)
+    - zhasni v [kuchyni](mistnost)
+    - zhasni v [jídelně](mistnost)
+    - zhasni v [ložnici](mistnost)
+    - zhasni u [Kuby](mistnost)
+    - zhasni u [Máji](mistnost)
+    - zhasni v [ložnici]{"entity": "mistnost", "value": "loznice"}
 - intent: kolik_je_hodin
   examples: |
     - kolik je
@@ -51,18 +78,36 @@ nlu:
     - přerušit
     - zruš to
     - přestaň
-- synonym: obyvak
+- intent: neni_zac
   examples: |
-    - obýváku
-    - obývák
-- synonym: loznice
+    - děkuji
+    - tak děkuji
+    - díky
+    - tak dík
+    - dík
+- synonym: chodba
   examples: |
-    - ložnici
-    - ložnice
-- synonym: kuchyn
+    - chodba
+    - chodbu
+    - chodbě
+- synonym: hala
   examples: |
-    - kuchyni
-    - kuchyně
+    - hala
+    - hale
+    - halou
+    - haly
+- synonym: jidelna
+  examples: |
+    - jídelna
+    - jídelny
+    - jídelně
+    - jídelnu
+- synonym: koupelna
+  examples: |
+    - koupelna
+    - koupelně
+    - koupelny
+    - koupelnu
 - synonym: krb
   examples: |
     - krbu
@@ -73,8 +118,36 @@ nlu:
     - kuby
     - kuba
     - kubou
+- synonym: kuchyn
+  examples: |
+    - kuchyň
+    - kuchyni
+    - kuchyně
+- synonym: loznice
+  examples: |
+    - ložnice
+    - ložnici
 - synonym: maja
   examples: |
     - máji
     - mája
+    - máje
     - májou
+- synonym: obyvak
+  examples: |
+    - obýváku
+    - obývák
+- synonym: pracovna
+  examples: |
+    - pracovna
+    - pracovně
+    - pracovny
+- synonym: lampicka
+  examples: |
+    - lampička
+    - lampičku
+    - lampičky
+- synonym: vchod
+  examples: |
+    - vchodem
+    - vchodu

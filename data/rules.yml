@@ -1,29 +1,50 @@
 version: "2.0"
-stories:
-- story: kolik je hodin
-  steps:
-  - intent: kolik_je_hodin
-  - action: utter_kolik_je_hodin
-- story: pozdrav_opakovany
-  steps:
-  - intent: pozdrav
-  - action: utter_pozdrav
-  - intent: pozdrav
-  - action: utter_pozdrav
 rules:
+
+- rule: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: Two-Stage-Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_two_stage_fallback
+  - active_loop: action_two_stage_fallback
+
 - rule: rozluc se kdykoliv
   steps:
   - intent: rozlouceni
   - action: utter_rozlouceni
-- rule: Activate form poptej mistnost
+
+- rule: jak se mas
+  steps:
+  - intent: jak_se_mas
+  - action: utter_jak_se_mas
+
+- rule: dik_neni_zac
+  steps:
+  - intent: neni_zac
+  - action: utter_neni_zac
+
+- rule: kolik je hodin
+  steps:
+  - intent: kolik_je_hodin
+  - action: action_time
+
+- rule: rozsvit
   steps:
   - intent: rozsvit
-  - action: poptej_mistnost
-  - active_loop: poptej_mistnost
-- rule: Submit form poptej mistnost
-  condition:
-  - active_loop: poptej_mistnost
-  steps:
-  - action: poptej_mistnost
-  - active_loop: null
   - action: action_rozsvit
+
+- rule: rozsvit kde
+  steps:
+  - intent: rozsvit
+    entities:
+    - mistnost: obýváku
+  - action: action_rozsvit
+
+- rule: zhasnout
+  steps:
+  - intent: zhasnout
+  - action: action_zhasni
