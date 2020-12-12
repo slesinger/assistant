@@ -36,7 +36,6 @@ rules:
   steps:
   - intent: rozsvit
   - action: action_rozsvit
-
 - rule: rozsvit kde
   steps:
   - intent: rozsvit
@@ -44,7 +43,11 @@ rules:
     - mistnost: obýváku
   - action: action_rozsvit
 
-- rule: zhasnout
+- rule: zapni_vzduchotechniku
   steps:
-  - intent: zhasnout
-  - action: action_zhasni
+  - intent: zapni_vzduchotechniku
+  - action: action_zapni_vzduchotechniku
+- rule: vypni_vzduchotechniku
+  steps:
+  - intent: vypni_vzduchotechniku
+  - action: action_vypni_vzduchotechniku

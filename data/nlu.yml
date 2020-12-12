@@ -12,7 +12,6 @@ nlu:
     - dobrý den
     - zdravím
     - čus
-    - díky
 - intent: rozlouceni
   examples: |
     - měj se
@@ -72,6 +71,7 @@ nlu:
   examples: |
     - kolik je
     - kolik je hodin
+    - se podívat kolik je hodin
 - intent: stop
   examples: |
     - stop
@@ -85,6 +85,43 @@ nlu:
     - díky
     - tak dík
     - dík
+
+- intent: zapni_vzduchotechniku
+  examples: |
+    - zapni VZP na [větrání](rezim_vzt)
+    - zapni VZP na [větrání](rezim_vzt) na [70](procenta)%
+    - zapnout vzduchotechniku na [větrání](rezim_vzt)
+    - zapnout vzduchotechniku na [větrání](rezim_vzt) na [70](procenta)
+    - zapnout klimatizaci na [větrání](rezim_vzt)
+    - zapnout klimatizaci na [větrání](rezim_vzt) na [70](procenta)
+    - zapni [větrání](rezim_vzt)
+    - zapni [větrání](rezim_vzt) na [70](procenta)%
+    - zapnout VZP na [větrání](rezim_vzt) na [70](procenta)%
+    - zapnout [větrání](rezim_vzt)
+    - zapnout [větrání](rezim_vzt) na [70](procenta)
+    - přepni na [větrání](rezim_vzt)
+    - přepni na [větrání](rezim_vzt) na [70](procenta)%
+    - přepni na [cirkulaci](rezim_vzt)
+    - přepni na [cirkulaci](rezim_vzt) [90](procenta)
+    - přepnout na [větrání](rezim_vzt) na [70](procenta)
+    - přepnout na [cirkulaci](rezim_vzt)
+    - přepnout na [cirkulaci](rezim_vzt) na [70](procenta)%
+    - přepnout vzduchotechniku na [noc](rezim_vzt)
+    - přepnout vzduchotechniku na [cirkulaci](rezim_vzt) na [70](procenta)
+
+- intent: vypni_vzduchotechniku
+  examples: |
+    - vypni VZP
+    - vypnout VZP
+    - vypni klimatizaci
+    - vypnout klimatizaci
+    - vypni vzduchotechniku
+    - vypnout vzduchotechniku
+    - vypni [cirkulaci](rezim_vzt)
+    - vypnout [cirkulaci](rezim_vzt)
+    - vypni [větrání](rezim_vzt)
+    - vypnout [větrání](rezim_vzt)
+
 - synonym: chodba
   examples: |
     - chodba
@@ -151,3 +188,7 @@ nlu:
   examples: |
     - vchodem
     - vchodu
+
+- regex: procenta
+  examples: |
+    - \d{2,3}

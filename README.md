@@ -8,6 +8,7 @@ rozsvit v obyvaku (v dane mistnosti)
 rozsvit v obyvaku a kuchyni
 rozsvit dole
 
+
 ### VZT
 zapni VZT na vetrani  (70%)
 zapni vetrani na 70%

@@ -12,10 +12,12 @@ intents:
 - rozlouceni
 - jak_se_mas
 - stop
-
+- zapni_vzduchotechniku
+- vypni_vzduchotechniku
 entities:
 - mistnost
-
+- rezim_vzt
+- procenta
 slots:
   posledni_mistnost:
     type: text
@@ -28,6 +30,8 @@ actions:
 - action_rozsvit
 - action_time
 - action_zhasni
+- action_zapni_vzduchotechniku
+- action_vypni_vzduchotechniku
 - utter_ask_mistnost
 - utter_neni_zac
 
