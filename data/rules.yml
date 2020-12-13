@@ -55,3 +55,12 @@ rules:
   steps:
   - intent: stav_vzduchotechniky
   - action: action_stav_vzduchotechniky
+
+- rule: zapni_noc
+  steps:
+  - intent: zapni_noc
+  - action: action_zapni_noc
+- rule: vypni_noc
+  steps:
+  - intent: vypni_noc
+  - action: action_vypni_noc

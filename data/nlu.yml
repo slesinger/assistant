@@ -139,6 +139,37 @@ nlu:
     - jestli je zapnutá VZP
     - jestli běží VZP
 
+- intent: zapni_noc
+  examples: |
+    - zapni noc
+    - zapnout noc
+    - udělej noc
+    - udělat noc
+    - budiž noc
+    - vypni den
+    - vypnout den
+    - zapni noc v [obýváku](mistnost)
+    - zapnout noc v [kuchyni](mistnost)
+    - udělej noc u [Máji](mistnost)
+    - udělat noc v [ložnici](mistnost)
+    - vypni den u [Kuby](mistnost)
+    - vypnout den v [ložnici](mistnost)
+- intent: vypni_noc
+  examples: |
+    - vypni noc
+    - vypnout noc
+    - udělej den
+    - udělat den
+    - budiž den
+    - zapni den
+    - zapnout den
+    - vypni noc v [obýváku](mistnost)
+    - vypnout noc v [kuchyni](mistnost)
+    - udělej den u [Máji](mistnost)
+    - udělat den v [ložnici](mistnost)
+    - zapni den u [Kuby](mistnost)
+    - zapnout den v [ložnici](mistnost)
+
 - synonym: chodba
   examples: |
     - chodba

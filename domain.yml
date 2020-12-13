@@ -15,6 +15,8 @@ intents:
 - zapni_vzduchotechniku
 - vypni_vzduchotechniku
 - stav_vzduchotechniky
+- zapni_noc
+- vypni_noc
 entities:
 - mistnost
 - rezim_vzt
@@ -34,6 +36,8 @@ actions:
 - action_zapni_vzduchotechniku
 - action_vypni_vzduchotechniku
 - action_stav_vzduchotechniky
+- action_zapni_noc
+- action_vypni_noc
 - utter_ask_mistnost
 - utter_neni_zac
 
@@ -97,6 +101,7 @@ responses:
   - text: jo jo
   - text: dobře
   - text: jasně
+  - text: hotovo
   - text: sámo
   - text: hm
   - text: jo

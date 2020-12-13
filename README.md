@@ -1,40 +1,54 @@
 # Asistent Rasa
 
-## Demanded skills
+## Skills
 ### Svetla
-rozsvit  (v default mistnosti)
-zhasni
-rozsvit v obyvaku (v dane mistnosti)
-rozsvit v obyvaku a kuchyni
-rozsvit dole
+[x] rozsvit  (v default mistnosti)
+
+[x] zhasni
+
+[x] rozsvit v obyvaku (v dane mistnosti)
+
+[x] rozsvit v obyvaku a kuchyni
+
+[x] rozsvit dole
 
 
 ### VZT
-zapni VZT na vetrani  (70%)
-zapni vetrani na 70%
-vypni VZT
-prepni na cirkulaci
-prepni na cirkulaci 90%
-rekni mi stav vzt
-*prepni vzp na vetrani na 15 minut
+[x] zapni VZT na vetrani  (70%)
+
+[x] zapni vetrani na 70%
+
+[x] vypni VZT
+
+[x] prepni na cirkulaci
+
+[x] prepni na cirkulaci 90%
+
+[x] rekni mi stav vzt
+
+[x] prepni vzp na vetrani na 15 minut
 
 ### Zaluzie
-*zapni den  / vypni noc
-*zapni noc / vypni den
+[x] zapni den  / vypni noc
+
+[x] zapni noc / vypni den
 
 ### Topeni
-*kolik je tu stupnu
+[ ] kolik je tu stupnu
 
 ### Zjistit stav
-*muzu zapnout mycku
-*na kdy mam zapnout mycku
+[ ] muzu zapnout mycku
+
+[ ] na kdy mam zapnout mycku
 
 
 ### Info
-kolik je hodin
-*kdy jede autobus
+[x] kolik je hodin
+
+[ ] kdy jede autobus
 
 
 ### Prikazy obecne
-*otevri branku
-*demo schody
+[ ] otevri branku
+
+[ ] demo schody
