@@ -3,8 +3,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import logging
 logger = logging.getLogger(__name__)
-#logger.setLevel(logging.DEBUG) nefunguje
-
+from actions.hassapi import Hass
 from rasa_sdk.events import (
     SlotSet,
     UserUtteranceReverted,
@@ -13,7 +12,6 @@ from rasa_sdk.events import (
     FollowupAction,
 )
 
-from actions.hassapi import Hass
 
 # Kde se nalezaji Asistenti, bere se ze sender_id
 def lookupDefaultLight(sender_id):
