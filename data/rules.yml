@@ -51,3 +51,7 @@ rules:
   steps:
   - intent: vypni_vzduchotechniku
   - action: action_vypni_vzduchotechniku
+- rule: stav_vzduchotechniky
+  steps:
+  - intent: stav_vzduchotechniky
+  - action: action_stav_vzduchotechniky

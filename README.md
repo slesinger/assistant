@@ -16,24 +16,25 @@ vypni VZT
 prepni na cirkulaci
 prepni na cirkulaci 90%
 rekni mi stav vzt
+*prepni vzp na vetrani na 15 minut
 
 ### Zaluzie
-zapni den  / vypni noc
-zapni noc / vypni den
+*zapni den  / vypni noc
+*zapni noc / vypni den
 
 ### Topeni
-kolik je tu stupnu
+*kolik je tu stupnu
 
 ### Zjistit stav
-muzu zapnout mycku
-na kdy mam zapnout mycku
+*muzu zapnout mycku
+*na kdy mam zapnout mycku
 
 
 ### Info
 kolik je hodin
-kdy jede autobus
+*kdy jede autobus
 
 
 ### Prikazy obecne
-otevri branku
-demo schody
+*otevri branku
+*demo schody

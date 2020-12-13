@@ -27,7 +27,7 @@ def lookupLight(sender_id):
     default_lights = {
         'dole': ['light.obyvak', 'light.jidelna', 'light.loznice'],
         'vsude': ['light.chodba', 'light.dvorek', 'light.hala', 'light.jidelna', 'light.koupelna', 'light.krb', 'light.kuba1', 'light.kuba2', 'switch.kuchyn_leva', 'switch.kuchyn_prava',
-            'switch.kuchyn_okno', 'light.kuchyn', 'light.loznice', 'light.maja1', 'light.maja2', 'light.obyvak', 'light.pracovna', 'light.pracovna_funkce', 'light.terasa', 'light.vchod'],
+            'switch.kuchyn_okno', 'light.kuchyn', 'light.loznice', 'light.maja1', 'light.maja2', 'light.obyvak', 'light.pracovna', 'switch.zasuvka_lampicka', 'light.terasa', 'light.vchod'],
         'chodba': ['light.chodba'],
         'hala': ['light.hala'],
         'jidelna': ['light.jidelna'],
@@ -39,7 +39,7 @@ def lookupLight(sender_id):
         'maja': ['light.maja1', 'light.maja2'],
         'obyvak': ['light.obyvak'],
         'pracovna': ['light.pracovna'],
-        'lampicka': ['light.pracovna_funkce'],
+        'lampicka': ['switch.zasuvka_lampicka'],
         'vchod': ['light.vchod']
     }
     return default_lights.get(sender_id, ['light.pracovna'])

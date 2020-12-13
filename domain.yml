@@ -14,6 +14,7 @@ intents:
 - stop
 - zapni_vzduchotechniku
 - vypni_vzduchotechniku
+- stav_vzduchotechniky
 entities:
 - mistnost
 - rezim_vzt
@@ -32,6 +33,7 @@ actions:
 - action_zhasni
 - action_zapni_vzduchotechniku
 - action_vypni_vzduchotechniku
+- action_stav_vzduchotechniky
 - utter_ask_mistnost
 - utter_neni_zac
 
@@ -102,3 +104,11 @@ responses:
   utter_ask_mistnost:
   - text: a kde?
   - text: v jaké místnosti?
+  utter_stav_vzduchotechniky_vypnuto:
+  - text: Teď je vé zet té vypnuté
+  - text: Vé zet té je vypnutá
+  - text: Klimatizace je vypnutá
+  - text: Vzduchotechnika je vypnutá
+  utter_stav_vzduchotechniky:
+  - text: Teď se {mode} na {pct}. Teplota vstupu je {temp} stupňů.
+  - text: Vé zet té {mode} na {pct}. Na vstupu je {temp} stupňů.

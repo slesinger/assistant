@@ -22,6 +22,18 @@ class Hass():
     def call_service(self, service, **kwargs):
         entity_id = kwargs.get('entity_id', False)
         logger.info("Calling Hass service {} with args {}".format(service, kwargs))
-        r = post(self.url + "/api/services/" + service.replace('.', '/', 1), headers=self.headers, json={ "entity_id": entity_id })
+        r = post(self.url + "/api/services/" + service.replace('.', '/', 1), headers=self.headers, json=kwargs)
         if r.status_code != 200:
             logger.error("Hass call status code {}".format(r.status_code))
+
+    def get_state(self, entity_id):
+        if entity_id == None:
+            logger.error("Entity_id is required")
+            return
+        r = get(self.url + "/api/states/" + entity_id, headers=self.headers)
+        if r.status_code != 200:
+            logger.error("Hass call status code {}".format(r.status_code))
+            return
+        json = r.json()
+        logger.info("Status of entity {} is: {}".format(entity_id, json))
+        return json

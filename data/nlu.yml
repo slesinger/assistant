@@ -126,6 +126,19 @@ nlu:
     - vypni [větrání](rezim_vzt)
     - vypnout [větrání](rezim_vzt)
 
+- intent: stav_vzduchotechniky
+  examples: |
+    - jaký je stav vzduchotechniky
+    - jakém stavu je vzduchotechnika
+    - jaký je status vzduchotechniky
+    - jestli je zapnutá vzduchotechnika
+    - jestli běží vzduchotechnika
+    - jaký je stav VZP
+    - jakém stavu je VZP
+    - jaký je status VZP
+    - jestli je zapnutá VZP
+    - jestli běží VZP
+
 - synonym: chodba
   examples: |
     - chodba
